@@ -22,6 +22,15 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./header.js"></script>
+    <script src="./cart.js"></script>
   </head>
   <body>
     <div class="bg-white w-full">
@@ -141,9 +150,11 @@
             />
           </svg>
 
+          <!-- Cart Icon -->
           <div
             class="
               cart-icon
+              relative
               text-gray-600
               flex
               items-center
@@ -154,6 +165,24 @@
               rounded-xl
             "
           >
+            <div
+              class="
+                cart-item-number
+                p-3
+                absolute
+                -top-1.5
+                -right-1.5
+                rounded-full
+                h-4
+                w-4
+                text-gray-700
+                flex
+                text=xs
+                items-center
+                justify-center
+                bg-white
+              "
+            ></div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -189,7 +218,15 @@
       </div>
       <div class="main h-screen flex">
         <div
-          class="main-sidebar w-1/5 bg-gray-900 border-t-2 border-gray-700 p-2"
+          class="
+            main-sidebar
+            w-1/5
+            hidden
+            md:inline-block
+            bg-gray-900
+            border-t-2 border-gray-700
+            p-2
+          "
           md:p-6
         >
           <div class="sidebar-categories">

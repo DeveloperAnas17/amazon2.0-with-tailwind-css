@@ -32,7 +32,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
     <script src="./firebase.js"></script>
   <script src="./script.js"></script>
+  <script src="./header.js"></script>
   </head>
+
   <body>
     <div class="bg-white w-full">
       <div class="header flex items-center h-16 bg-gray-900 pd-6">
@@ -129,7 +131,6 @@
             text-white
             ml-auto
             mr-1
-            md:mr-8
             w-48
             h-16
           "
@@ -183,7 +184,7 @@
                 bg-white
               "
             >
-              0
+              
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -399,10 +400,12 @@
               Popular Categories
               <i class="fas fa-star h-6 w-5 text-yellow-400 ml-2"></i>
             </h1>
-            <div class="categories mt-5 flex">
+            <div class="categories mt-5 flex flex-wrap">
               <div
                 class="
                   icon-desktop
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -432,8 +435,8 @@
               <div
                 class="
                   icon-gift
-                  ml-3
-                  md:ml-6
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -463,8 +466,9 @@
               <div
                 class="
                   icon-mobile
-                  ml-3
-                  md:ml-6
+                  mr-3
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -494,8 +498,9 @@
               <div
                 class="
                   icon-book
-                  ml-3
-                  md:ml-6
+                  mr-3
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -525,8 +530,9 @@
               <div
                 class="
                   icon-camera
-                  ml-3
-                  md:ml-6
+                  mr-3
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -562,8 +568,9 @@
               <div
                 class="
                   icon-music
-                  ml-3
-                  md:ml-6
+                  mr-3
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -593,8 +600,9 @@
               <div
                 class="
                   icon-bulb
-                  ml-3
-                  md:ml-6
+                  mr-3
+                  mt-5
+                  mr-6
                   flex
                   justify-center
                   items-center
@@ -627,118 +635,7 @@
             <h1 class="text-2xl font-bold text-gray-700 mb-5">Hot Deals 🔥</h1>
 
             <div class="main-section-products grid grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-x-2 gap-y-5 ">
-              <!-- <div class="main-product m-auto">
-
-                      <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                          <img
-                          class="w-full h-full object-contain"
-                          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Ss9SYh0ukRT7ftoIijEquAHaE_%26pid%3DApi&f=1"
-                          alt=""
-                          />
-                        </div>
-                        <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                            Nintendo Switch(2021)
-                        </div>
-                        <div class="product-make text-green-700 font-bold">
-                            Nintendo
-                        </div>
-                        <div class="product-rating text-yellow-600 my-1">
-                            ⭐⭐⭐⭐ 4.5
-                        </div>
-                        <div class="product-price font-bold text-gray-700 text-lg">
-                            $239.00
-                        </div>
-
-                        <button class="add-to-cart bg-yellow-500 mt-2 text-white w-40 p-3 hover:bg-yellow-600">Add To Cart</button>
-                </div> -->
-
-              <!-- <div class="main-product m-auto">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/81b7F7ZltiL._AC_UL320_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                  Lorentz black iconic 
-                </div>
-                <div class="product-make text-green-700 font-bold">Lorentz</div>
-                <div class="product-rating text-yellow-600 my-1">
-                  ⭐⭐⭐⭐ 4
-                </div>
-                <div class="product-price font-bold text-gray-700 text-lg">
-                  $109.00
-                </div>
-                <button class="add-to-cart bg-yellow-500 mt-2 text-white w-40 p-3 hover:bg-yellow-600">Add To Cart</button>
-              </div>
-
-              <div class="main-product m-auto">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_04_sbc_v1_564x564_in-en._SY530_QL85_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                  Sony Alpha ILCE 6000L
-                </div>
-                <div class="product-make text-green-700 font-bold">
-                  Sony
-                </div>
-                <div class="product-rating text-yellow-600 my-1">
-                  ⭐⭐⭐⭐ 4.5
-                </div>
-                <div class="product-price font-bold text-gray-700 text-lg">
-                  $2239.00
-                </div>
-                <button class="add-to-cart bg-yellow-500 mt-2 text-white w-40 p-3 cursor-pointer hover:bg-yellow-600">Add To Cart</button>
-              </div>
-
-              <div class="main-product m-auto">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/71AdHA+qqwL._AC_UY218_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                  Think and Grow Rich
-                </div>
-                <div class="product-make text-green-700 font-bold">
-                  Napolian Hill
-                </div>
-                <div class="product-rating text-yellow-600 my-1">
-                  ⭐⭐⭐⭐ 4.5
-                </div>
-                <div class="product-price font-bold text-gray-700 text-lg">
-                  $139.00
-                </div>
-                <button class="add-to-cart bg-yellow-500 mt-2 text-white w-40 p-3 cursor-pointer hover:bg-yellow-600">Add To Cart</button>
-              </div> -->
-
-              <!-- <div class="main-product m-auto">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/81RLb+C-RbS._AC_UY218_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                  SAMSUNG Galaxy Book Pro
-                </div>
-                <div class="product-make text-green-700 font-bold">Samsung</div>
-                <div class="product-rating text-yellow-600 my-1">
-                  ⭐⭐⭐⭐⭐ 5
-                </div>
-                <div class="product-price font-bold text-gray-700 text-lg">
-                  $1029.00
-                </div>
-                <button class="add-to-cart bg-yellow-500 mt-2 text-white w-40 p-3 cursor-pointer hover:bg-yellow-600">Add To Cart</button>
-              </div> -->
+              
             </div>
           </div>
         </div>
