@@ -17,7 +17,8 @@ function getTotalCost(items) {
   items.forEach((item) => {
     totalCost += item.price * item.quantity;
   });
-  document.querySelector(".total-cost-number").innerText = `$${totalCost}`;
+  document.querySelector(".total-cost-number").innerText =
+    numeral(totalCost).format("$0,0.00");
 }
 
 function decreaseCount(itemId) {
@@ -112,7 +113,7 @@ function generateCartItems(cartItem) {
           </div>
         </div>
         <div class="cart-item-total-cost w-48 font-bold text-gray-400">
-         $${item.price * item.quantity}
+        ${numeral(item.price * item.quantity).format("$0,0.00")} 
         </div>
         <div
         data-id="${item.id}"
